@@ -1,0 +1,77 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="style/style2.css" id="id_css">
+    <link rel="shortcut icon" href="img/jsb.ico" type="image/x-icon">
+    <title>JS Benjamins</title>
+    <script src="scripts/jquery-1.11.1.js"></script>
+    <script src="scripts/konami.js"></script>
+    <script type="text/javascript" src="http://www.jsbenjamins.nl/contact-files/contact-form.js"></script>
+    <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-7664490-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+	<script language="javascript">
+	var statuseitje = false;
+	var audioElement = document.createElement('audio');
+	audioElement.setAttribute('src', 'img/link.wav');
+	audioElement.load();
+	var eitje = new Konami(function() {
+		if (statuseitje==false) {
+			document.getElementById("id_sc_logo").src = "img/link.png";
+			statuseitje = true;
+			audioElement.play();
+		}
+		else {
+			document.getElementById("id_sc_logo").src = "img/jsb_logo.png";
+			statuseitje = false;
+		}
+	
+	});
+	</script>
+</head>
+
+<body>
+
+<div id="id_header">
+	<div id="id_bgim">
+		<img src="img/bgim.png" alt="background image" border="0">
+	</div>
+    <a name="#top"></a>
+    <a href="index.php">
+        <img src="img/jsb_logo.png" id="id_sc_logo" class="dot">
+    </a>
+    <ul id="id_navmenu">
+                
+        <a href="work.php"><li><img src="img/work.png" class="dot"></li></a
+        ><a href="music.php"><li class="even"><img src="img/music.png" class="dot"></li></a>
+        <!--<a href="blog.php"><li>Blog</li></a>-->
+        <a href="links.php"><li><img src="img/links.png" class="dot"></li></a>               
+        <a href="contact.php"><li class="even"><img src="img/contact.png" class="dot"></li></a> 
+    </ul>
+</div> <!-- end div id="id_header" -->
+
+<div id="id_title">
+	<h1>People like you and I, though mortal of course like everyone else, do not grow old no matter how long we live...[We] never cease to stand like curious children before the great mystery into which we were born.<br><br>
+- Albert Einstein in letter to Otto Juliusburger, 1942</h1>
+</div> <!-- end div id="id_title" -->
+
+<div id="id_content">
+    <p>Einstein was right. I was, and always will be curious; driven to know and pleased when finding things out. Whether it's research, music, programming, history or trying to falsify The Existence of Washing Labels at a young age, my curiosity never stops. So, I invite you to do the same: be curious and browse around...</p>
+</div> <!-- end div id="id_content" -->
+
+<div id="id_footer">
+	
+</div> <!-- end div id="id_footer" -->
+
+</body>
+</html>

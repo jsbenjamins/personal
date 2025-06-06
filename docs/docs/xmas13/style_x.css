@@ -1,0 +1,156 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* margin and padding reset */
+html, body, form, fieldset, h1, h2, h3, h4, h5, h6, p, pre, blockquote, ul, ol, dl, address {
+  	margin:0;
+  	padding:0;
+}
+
+body {
+	background-color:#666666;
+	font-family:"Courier New", Courier, monospace;
+	font-size:12px;
+	background:url(bg.jpg);
+}
+
+p {
+	padding:0px 0px;
+	color:#990000;
+	font-weight:bold;
+}
+
+b {
+	color:#F00;
+}
+
+td {
+	padding:0px 0px;
+	color:#0066;
+	font-weight:bold;
+	vertical-align:top;
+}
+
+cite {
+	padding:0px 0px;
+	color:#660000;
+}
+
+#bgim {
+	position:absolute;
+	left:410px;
+	z-index:-3;
+}
+
+#box {
+	overflow:hidden; 
+	background-color:#FFFFFF;
+	width:750px;
+	height:400px;
+	position:absolute;
+	left:50px;
+	top:80px;
+}
+
+#line {
+	background-color:#000000;
+	width:595px;
+	height:3px;
+	position:absolute;
+	left:187px;
+	top:94px;
+
+}
+
+#logo {
+	position:absolute;
+	left:60px;
+	top:40px;
+	z-index:1;
+}
+
+#me {
+	position:absolute;
+	left:65px;
+	top:225px;
+	z-index:1;
+}
+
+#pastxmas {
+	position:absolute;
+	left:65px;
+	top:225px;
+	z-index:1;
+	color:#CCC;
+}
+
+#missinglink {
+	position:absolute;
+	left:665px;
+	top:225px;
+	z-index:1;
+	color:#CCC;
+}
+
+#navigation {
+	position:absolute;
+	left:450px;
+	top:95px;
+}
+
+#navigation li {
+	float:left; 
+	color:#3399ff; 
+	list-style:none; 
+	padding:5px 10px;
+	z-index:3;
+}
+
+
+#content {
+	float:left;
+	position:absolute;
+	left:300px;
+	top:150px;
+	width:330px;
+	text-align:justify;
+	z-index:2;
+}
+
+#galselect {
+	position:absolute;
+	top:200px;
+	left:65px;
+	width:200px;
+}
+
+#publist {
+	background-color:#FFFFFF;
+	position:absolute;
+}
+
+#publist p {
+	font-weight:normal;
+}
+
+a:link, a:visited {
+	color:#CCC;
+	text-decoration:none;
+	font-weight:bold;
+}
+
+a:hover {
+	color:#000000;
+}
+
+a:active {
+	color:#000000;
+}
+
+label {
+	color:#660000;
+}
+
+select, option {
+	width: 200px;
+}

@@ -1,0 +1,255 @@
+@charset "UTF-8";
+
+@import url(http://fonts.googleapis.com/css?family=Oxygen:300);
+
+html, body, form, fieldset, h1, h2, h3, h4, h5, h6, p, pre, blockquote, ul, ol, dl, address {
+  	margin:0;
+  	padding:0;
+	font-family:"Oxygen", sans-serif;
+	color:#3F3F3F;
+	font-size:20px;
+}
+
+.dot {
+	-webkit-border-radius:50%; /* Safari 3-4, iOS 1-3.2, Android 1.6- */
+	-moz-border-radius:50%; /* Firefox 1-3.6 */
+	border-radius:50%; /* Opera 10.5, IE 9, Safari 5, Chrome, Firefox 4, iOS 4, Android 2.1+ */
+	margin-right:5px;
+	margin-bottom:10px;
+	border:10px solid #39f;
+	-webkit-transition: border 0.3s; /* For Safari 3.1 to 6.0 */
+    transition: border 0.3s;
+}
+
+.dot:hover {
+	border:10px solid #EEE;
+}
+
+hr {
+	width:830px;
+	border:0;
+    height:0;
+    border-top:1px solid #CCC;
+	margin-left:20px;
+	margin-top:80px;
+	margin-bottom:0px;
+}
+
+p {
+	margin-left:20px;
+	margin-top:20px;
+	margin-bottom:20px;
+	line-height:180%;
+}
+
+h1 {
+	margin-left:20px;
+	margin-top:20px;
+	margin-bottom:20px;
+	font-size:0.9em;
+	width:850px;
+	font-weight:200;
+}
+
+h2 {
+	color:#1A720A;
+}
+
+h3 {
+	font-size:.8em;
+	font-weight:100;
+	color:#1A720A;
+}
+
+h4 {
+	font-size:.8em;
+	font-weight:100;
+}
+
+h5 {
+	font-size:.7em;
+	font-weight:100;
+	line-height:170%;
+}
+
+a {
+	text-decoration:none;
+	color:#39F;
+	-webkit-transition:color 0.3s; /* For Safari 3.1 to 6.0 */
+    transition:color 0.3s;
+}
+
+a:hover {
+	color:#009;
+}
+
+#id_header {
+	position:relative;
+	background-image:url(../img/bg.jpg);
+	background-repeat:no-repeat;
+	background-color:#FFF;
+	height:200px;
+	width:95%;
+	padding-left:5%;
+}
+
+#id_bgim {
+	position: absolute;
+	left: 80px;
+}
+
+#id_sc_logo {
+	position:relative;
+	top:15px;
+	background-color:#EEE;
+	-webkit-transition: background-color 0.3s; /* For Safari 3.1 to 6.0 */
+    transition: background-color 0.3s;
+}
+
+#id_sc_logo:hover {
+	background-color:#39F;
+}
+
+#id_navmenu {
+	position:absolute;
+	left:500px;
+	top:17px;
+}
+
+
+#id_navmenu li {
+	float:left; 
+	color:#000; 
+	list-style:none; 
+	z-index:3;
+}
+
+#id_navmenu li.even {
+	position:relative;
+	top:20px;
+}
+
+#id_navmenu li img {
+	background-color:#EEE;
+	padding:5px;
+	z-index:3;
+	-webkit-transition: background-color 0.3s; /* For Safari 3.1 to 6.0 */
+    transition: background-color 0.3s;
+}
+
+#id_navmenu li img:hover {
+	color:#fff; 
+	background-color:#39F;
+}
+
+#id_title {
+	position:relative;
+	width:95%;
+	background-color:#EEE;
+	padding-left:5%;
+	border-top:1px solid #CCC;
+	border-bottom:1px solid #DDD;
+}
+
+#id_content {
+	width:850px;
+	position:relative;
+	padding-left:5%;
+}
+
+#id_button {
+	position:relative;
+	width:160px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:20px;
+	margin-bottom:20px;
+	text-align:center;
+	color:#fff; 
+	padding:15px 20px;
+	background-color:#F60;
+	-webkit-transition: background-color 0.1s; /* For Safari 3.1 to 6.0 */
+    transition: background-color 0.1s;
+}
+
+#id_button:hover {
+	color:#000; 
+	background-color:#FC0;
+}
+
+#FSCForm1 {
+	width:600px;
+	margin-left:20px;
+}
+
+#id_mailform_thin {
+	float:left;
+	position:absolute;
+	width:375px;
+	padding-left:5%;
+	left:650px;
+	height:517px;
+}
+
+#fsc_ex_field1_1, #fsc_ex_field1_2, #fsc_ex_field1_3, #fsc_captcha_code1 {
+	width:250px;
+	height: 30px;
+	border:1px solid #ccc;
+	padding:5px;
+	font-family:"Oxygen", sans-serif;
+	color:#3F3F3F;
+	font-size:20px;
+}
+
+#fsc_ex_field1_4{
+	width:450px;
+	height:250px;
+	border:1px solid #ccc;
+	padding:5px;
+	font-family:"Oxygen", sans-serif;
+	color:#3F3F3F;
+	font-size:20px;
+}
+
+#fsc-submit-1 {
+	position:relative;
+	width:250px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:20px;
+	margin-bottom:20px;
+	text-align:center;
+	color:#3f3f3f; 
+	padding:15px 20px;
+	background-color:#39f;
+	border:0px;
+	-webkit-transition: background-color 0.3s; /* For Safari 3.1 to 6.0 */
+    transition: background-color 0.3s;
+	font-family:"Oxygen", sans-serif;
+	font-size:20px;
+}
+
+#fsc-submit-1:hover {
+	color:#fff; 
+	background-color:#009;
+}
+
+#id_footer {
+	position:relative;
+	top:50px;
+	width:95%;
+	height:auto;
+	background-color:#FFF;
+	padding-left:5%;
+	padding-top:20px;
+	padding-bottom:50px;
+	border-top:1px solid #DDD;
+}
+
+#id_preview {
+	width:190px;
+	height:190px;
+	position:relative;
+	top:-329px;
+	left:600px;
+}

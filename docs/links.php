@@ -1,0 +1,89 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="style/style2.css" id="id_css">
+    <link rel="shortcut icon" href="img/jsb.ico" type="image/x-icon">
+    <title>JS Benjamins</title>
+    <script src="scripts/jquery-1.11.1.js"></script>
+    <script src="scripts/konami.js"></script>
+    <script type="text/javascript" src="http://www.jsbenjamins.nl/contact-files/contact-form.js"></script>
+    <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-7664490-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+	<script language="javascript">
+	var statuseitje = false;
+	var audioElement = document.createElement('audio');
+	audioElement.setAttribute('src', 'img/link.wav');
+	audioElement.load();
+	var eitje = new Konami(function() {
+		if (statuseitje==false) {
+			document.getElementById("id_sc_logo").src = "img/link.png";
+			statuseitje = true;
+			audioElement.play();
+		}
+		else {
+			document.getElementById("id_sc_logo").src = "img/jsb_logo.png";
+			statuseitje = false;
+		}
+	
+	});
+	</script>
+</head>
+
+<body>
+
+<div id="id_header">
+	<div id="id_bgim">
+		<img src="img/bgim.png" alt="background image" border="0">
+	</div>
+    <a name="#top"></a>
+    <a href="index.php">
+        <img src="img/jsb_logo.png" id="id_sc_logo" class="dot">
+    </a>
+   <ul id="id_navmenu">
+                
+        <a href="work.php"><li><img src="img/work.png" class="dot"></li></a
+        ><a href="music.php"><li class="even"><img src="img/music.png" class="dot"></li></a>
+        <!--<a href="blog.php"><li>Blog</li></a>-->
+        <a href="links.php"><li><img src="img/links.png" class="dot"></li></a>               
+        <a href="contact.php"><li class="even"><img src="img/contact.png" class="dot"></li></a> 
+    </ul>
+</div> <!-- end div id="id_header" -->
+
+<div id="id_title">
+	<h1>A computer terminal is not some clunky old television with a typewriter in front of it. It is an interface where the mind and body can connect with the universe and move bits of it about.<br/><br/>- Douglas Adams in Mostly Harmless, 1992</h1>
+</div> <!-- end div id="id_title" -->
+
+<div id="id_content">
+    <p>
+    Just some links here, to further browse around the web:<br/>
+    <a href="https://github.com/jsbenjamins/gazecode/tree/glasses-viewer-integration" target="_blank">GazeCode</a> - GazeCode, an open-source toolbox for mobile eye-tracking data analysis<br/> (integrated with tool below).<br/>
+    <a href="https://github.com/dcnieho/GlassesViewer" target="_blank">GlassesViewer</a> - open-source parser, viewer and coding GUI for data from Tobii Glasses 2.<br/>
+    <a href="http://www.slaapregister.nl" target="_blank">Nederlands Slaap Register</a> - online research on insomnia (previous work).<br/>
+    <a href="http://jsbenjamins.tumblr.com" target="_blank">Personal blog</a> - where I sometimes post stuff I find worth posting.<br/>
+    <a href="http://iambuildingapicade-blog.tumblr.com" target="_blank">PiCade blog</a> - second blog keeping track of my PiCade build.<br/>
+    <a href="https://www.youtube.com/channel/UCPgYev8UqTceH9eEtjjrLbQ" target="_blank">My YouTube channel</a> - with liked and posted videos.<br/>
+    <a href="http://9gag.com" target="_blank">9GAG</a> - great place to procrastinate a while.<br/>   
+    <a href="http://coursera.org" target="_blank">Coursera </a> - great place to educate yourself.<br/>
+    <a href="http://caniuse.com" target="_blank">Can I Use?</a> - great place for web developers.<br/>
+    </p>
+</div> <!-- end div id="id_content" -->
+
+<div id="id_footer">
+	
+</div> <!-- end div id="id_footer" -->
+
+
+
+</body>
+</html>

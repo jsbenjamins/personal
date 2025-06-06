@@ -1,0 +1,102 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="style/style2.css" id="id_css">
+    <link rel="stylesheet" type="text/css" href="style/page-player.css" />
+    <link rel="stylesheet" type="text/css" href="music/flashblock/flashblock.css" />
+    <link rel="shortcut icon" href="img/jsb.ico" type="image/x-icon">
+    <title>JS Benjamins</title>
+	<script type="text/javascript" src="scripts/soundmanager2-nodebug-jsmin.js"></script>
+	<script type="text/javascript" src="scripts/page-player.js"></script>
+	<script src="scripts/konami.js"></script>
+	<script type="text/javascript">
+		soundManager.setup({
+  		url: 'music/swf/',
+  		html5PollingInterval: 50
+		});
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-7664490-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+	<script language="javascript">
+	var statuseitje = false;
+	var audioElement = document.createElement('audio');
+	audioElement.setAttribute('src', 'img/link.wav');
+	audioElement.load();
+	var eitje = new Konami(function() {
+		if (statuseitje==false) {
+			document.getElementById("id_sc_logo").src = "img/link.png";
+			statuseitje = true;
+			audioElement.play();
+		}
+		else {
+			document.getElementById("id_sc_logo").src = "img/jsb_logo.png";
+			statuseitje = false;
+		}
+	
+	});
+	</script>
+</head>
+
+<body>
+
+<div id="id_header">
+	<div id="id_bgim">
+		<img src="img/bgim.png" alt="background image" border="0">
+	</div>
+    <a name="#top"></a>
+    <a href="index.php">
+        <img src="img/jsb_logo.png" id="id_sc_logo" class="dot">
+    </a>
+    <ul id="id_navmenu">
+                
+        <a href="work.php"><li><img src="img/work.png" class="dot"></li></a
+        ><a href="music.php"><li class="even"><img src="img/music.png" class="dot"></li></a>
+        <!--<a href="blog.php"><li>Blog</li></a>-->
+        <a href="links.php"><li><img src="img/links.png" class="dot"></li></a>               
+        <a href="contact.php"><li class="even"><img src="img/contact.png" class="dot"></li></a> 
+    </ul>
+</div> <!-- end div id="id_header" -->
+
+<div id="id_title">
+	<h1>Without music, life would be a mistake.<br/><br/>- Friedrich Nietzsche in Twilight of the Idols, 1888</h1>
+</div> <!-- end div id="id_title" -->
+
+<div id="id_content">
+	<p>Over the years I've been making and recording music using different methods. Here you'll find some resulting mp3s. A similar, but more recent collection can be found on my <a href="https://soundcloud.com/mayor418studios" target="_blank">soundcloud</a> as well.</p>
+ 	<div id="sm2-container">
+  	<!-- SM2 flash movie goes here -->
+ 	</div>
+	<ul class="playlist">
+  		<li><a href="music/mp3/rockinghard.mp3">Rocking hard</a></li>
+		<li><a href="music/mp3/badthings.mp3">Bad things (True Blood theme song cover)</a></li>
+		<li><a href="music/mp3/ukulele.mp3">Somewhere over the rainbow (Ukulele)</a></li>
+		<li><a href="music/mp3/autumn.mp3">Autumn leaves</a></li>
+		<li><a href="music/mp3/stopmetaltime.mp3">Stop! Metal time!</a></li>
+		<li><a href="music/mp3/surfnroll.mp3">Surf's up</a></li>
+		<li><a href="music/mp3/tetris.mp3">Blocked play</a></li>
+		<li><a href="music/mp3/hendrix.mp3">Purple pink</a></li>
+		<li><a href="music/mp3/jazzynationarmy.mp3">Jazzy nation army</a></li>
+		<li><a href="music/mp3/benjaminsmix.mp3">Benjamix (with Dad)</a></li>
+		<li><a href="music/mp3/jazzy2.mp3">Jazzy thing #42</a></li>
+		<li><a href="music/mp3/mondaymix.mp3">Monday mix</a></li>
+	 </ul>
+
+</div> <!-- end div id="id_content" -->
+
+<div id="id_footer">
+	
+</div> <!-- end div id="id_footer" -->
+
+</body>
+</html>

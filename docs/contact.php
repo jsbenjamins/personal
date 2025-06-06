@@ -1,0 +1,75 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="style/style2.css" id="id_css">
+    <link rel="shortcut icon" href="img/jsb.ico" type="image/x-icon">
+    <title>JS Benjamins</title>
+    <script src="scripts/jquery-1.11.1.js"></script>
+    <script src="scripts/konami.js"></script>
+    <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-7664490-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+	<script language="javascript">
+	var statuseitje = false;
+	var audioElement = document.createElement('audio');
+	audioElement.setAttribute('src', 'img/link.wav');
+	audioElement.load();
+	var eitje = new Konami(function() {
+		if (statuseitje==false) {
+			document.getElementById("id_sc_logo").src = "img/link.png";
+			statuseitje = true;
+			audioElement.play();
+		}
+		else {
+			document.getElementById("id_sc_logo").src = "img/jsb_logo.png";
+			statuseitje = false;
+		}
+	
+	});
+	</script>
+</head>
+
+<body>
+
+<div id="id_header">
+	<div id="id_bgim">
+		<img src="img/bgim.png" alt="background image" border="0">
+	</div>
+    <a name="#top"></a>
+    <a href="index.php">
+        <img src="img/jsb_logo.png" id="id_sc_logo" class="dot">
+    </a>
+    <ul id="id_navmenu">
+                
+        <a href="work.php"><li><img src="img/work.png" class="dot"></li></a
+        ><a href="music.php"><li class="even"><img src="img/music.png" class="dot"></li></a>
+        <!--<a href="blog.php"><li>Blog</li></a>-->
+        <a href="links.php"><li><img src="img/links.png" class="dot"></li></a>               
+        <a href="contact.php"><li class="even"><img src="img/contact.png" class="dot"></li></a> 
+    </ul>
+</div> <!-- end div id="id_header" -->
+
+<div id="id_title">
+	<h1>The most important things are the hardest to say. They are the things you get ashamed of, because words diminish them -- words shrink things that seemed limitless when they were in your head to no more than living size when they're brought out.<br/><br/>- Stephen King in Different Seasons, 1982</h1>
+</div> <!-- end div id="id_title" -->
+
+<div id="id_content">
+<div id="465d818cfb2ded34aa2caacc">Click <a href="https://www.formgenerator.nl/form/465d818cfb2ded34aa2caacc.html">here</a>to fill in the contact form. Powered by <a href="https://www.yourhosting.nl">Yourhosting</a></div><script src="https://www.formgenerator.nl/form/465d818cfb2ded34aa2caacc.js"></script>
+</div> <!-- end div id="id_content" -->
+
+<div id="id_footer">
+	
+</div> <!-- end div id="id_footer" -->
+
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB" lang="en-GB"> 
+<head> 
+        <title>Christmas (Invaders) 2015</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" /> 
+        <meta name="viewport" content="width=device-width; initial-scale=0.7; maximum-scale=0.7; user-scalable=0;">
+		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="glow/0.4.0/dist/glow/glow.js"></script>
+		<script type="text/javascript" src="glow/0.4.0/dist/effects/effects.js"></script>		
+		<script type="text/javascript" src="glow/0.4.0/dist/widgets/widgets.js"></script>		
+		<script type="text/javascript" src="js/ship.js"></script>
+		<script type="text/javascript" src="js/mothership.js"></script>		
+		<script type="text/javascript" src="js/invader.js"></script>		
+		<script type="text/javascript" src="js/bullet.js"></script>		
+		<script type="text/javascript" src="js/barrier.js"></script>		
+		<script type="text/javascript" src="js/game.js"></script>
+	
+		
+		<link href="css/stylem.css" rel="stylesheet" type="text/css" />
+
+	</head>
+	
+    <body>
+    <script language="javascript">
+	function moveshipleft() {
+		this.moveleft = glow.anim.css(document.getElementsByClassName('ship')[0], 1, {"left": {to:"0"}}).start();
+		setTimeout('this.moveleft.stop(); this.moveleft = false;',120);
+	}
+
+	function moveshipright() {
+		this.moveright = glow.anim.css(document.getElementsByClassName('ship')[0], 1, {"left": {to:"470"}}).start();
+		setTimeout('this.moveright.stop(); this.moveright = false;',120);
+	}
+	
+	function makeshipshoot() {
+		var x = parseInt(document.getElementsByClassName('ship')[0].style.left);
+		var y = parseInt(document.getElementsByClassName('ship')[0].style.top);					
+						
+		this.bullet = new ShipBullet(x + 15,y,-1,1);
+		Game.addBullet(this.bullet)
+		this.bullet.fire();
+	
+		this.bulletListener = glow.events.addListener(
+			this.bullet,
+			'dead',
+			function() {this.bullet = false;},
+				this
+		);
+	}
+	</script>
+<h1>Christmas 2015</h1>
+<p>Wishing you all happy holidays, all the best<br/>
+for 2016 and enjoy this little oldskool game<br/> 
+below between christmas dinners ;)</p>
+<p>Cheers, Jeroen</p>
+		<div id="board_holder">
+			<div id="score">SCORE: <span id="score_actual">0</span></div>
+			<div id="lives">
+				LIVES: 
+				<img src="./images/ship_icon.gif" width="30" height="16" class="life" alt="ship" />
+				<img src="./images/ship_icon.gif" width="30" height="16" class="life" alt="ship" />
+				<img src="./images/ship_icon.gif" width="30" height="16" class="life" alt="ship" />
+			</div>	
+			<div id="board">
+				<div id="game_over">
+					<h2>CHRISTMAS INVADERS</h2>
+					<p>
+						<a href="javascript:Game.init()">PLAY</a>
+					</p>
+					<p>CONTROLS:</p>
+					<ul>
+						<li>Back to desktop?</li>
+						<li>Click <a href="index.html">here</a>.</li>						
+						<li>&nbsp;</li>												
+                        <li>Use the buttons to the left/right</li>
+                        <li>and F to fire when on mobile.</li>
+                        <li>(experimental, might not work on all devices).</li>																		
+					</ul>
+				</div>
+			</div>
+		</div>
+		<input type="button" id="butl" value="<" onclick="moveshipleft();">
+		<input type="button" id="butr" value=">" onclick="moveshipright();">
+        <input type="button" id="butf" value="F" onclick="makeshipshoot();">
+        
+        <div id="prevxmas" ><p>Previous season's greetings</p>
+        <table width="500" border="0">
+          <tr>
+            <td><a href="http://www.jsbenjamins.nl/docs/kerst2003.swf" target="_blank" class="prevyears">2003</a></td>
+            <td><a href="http://www.jsbenjamins.nl/docs/kerst2006.html" target="_blank" class="prevyears">2006</a></td>
+            <td><a href="http://www.jsbenjamins.nl/docs/xmas09/index.html" target="_blank" class="prevyears">2009</a></td>
+            <td><a href="http://www.jsbenjamins.nl/docs/xmas12/index.html" target="_blank" class="prevyears">2012</a></td>
+          </tr>
+          <tr>
+            <td><a href="http://www.jsbenjamins.nl/docs/kerst2004.swf" target="_blank" class="prevyears">2004</a></td>
+            <td><a href="http://www.jsbenjamins.nl/docs/kerst2007.html" target="_blank" class="prevyears">2007</a></td>
+            <td><a href="http://www.jsbenjamins.nl/docs/xmas2010/index.html" target="_blank" class="prevyears">2010</a></td>
+            <td><a href="http://www.jsbenjamins.nl/docs/xmas13/index.html" target="_blank" class="prevyears">2013</a></td>
+          </tr>
+          <tr>
+            <td><a href="http://www.jsbenjamins.nl/docs/kerst2005.swf" target="_blank" class="prevyears">2005</a></td>
+            <td><a href="http://www.jsbenjamins.nl/docs/kerst2008/index.html" target="_blank" class="prevyears">2008</a></td>
+            <td><a href="http://www.jsbenjamins.nl/docs/xmas11/index.html" target="_blank" class="prevyears">2011</a></td>
+            <td><a href="http://www.jsbenjamins.nl/docs/xmas2014.html" target="_blank" class="prevyears">2014</a></td>
+          </tr>
+        </table>
+        </div>
+		
+
+		 		
+    </body> 
+</html> 
